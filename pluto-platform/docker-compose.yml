@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  # The Database Service (already exists, but we add a healthcheck)
+  db:
+    image: postgres:13
+    container_name: htp_postgres_db
+    restart: always
+    environment:
+      - POSTGRES_USER=htp_user
+      - POSTGRES_PASSWORD=htp_password
+      - POSTGRES_DB=htp_platform_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U htp_user -d htp_platform_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # The Backend Service (New)
+  backend:
+    build: ./backend  # Tells Docker to use the Dockerfile in the ./backend directory
+    container_name: htp_backend
+    restart: always
+    ports:
+      - "8000:8000"  # Map host port 8000 to container port 8000
+    volumes:
+      - ./backend:/app # Mounts your local code for live-reloading during development
+    environment:
+      # Pass the API key from a .env file in the root directory
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+    depends_on:
+      db:
+        condition: service_healthy # IMPORTANT: Wait for the database to be ready
+
+  # The Frontend Service (New)
+  frontend:
+    build: ./frontend # Tells Docker to use the Dockerfile in the ./frontend directory
+    container_name: htp_frontend
+    restart: always
+    ports:
+      - "3000:80"    # Map host port 3000 to the container's Nginx port 80
+    depends_on:
+      - backend      # Wait for the backend to be available
+
+volumes:
+  postgres_data:
