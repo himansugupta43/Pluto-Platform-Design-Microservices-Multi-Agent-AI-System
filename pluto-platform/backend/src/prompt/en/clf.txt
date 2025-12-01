@@ -1,0 +1,19 @@
+Based on the professional signal assessment provided, classify the overall mental health screening result as follows:
+
+Analyze the signal assessment and determine:
+
+1. IS THERE EVIDENCE OF SIGNIFICANT MENTAL HEALTH CONCERNS?
+   - Review all indicators of psychological distress
+   - Assess severity level
+   - Evaluate need for professional attention
+   - Consider context and developmental appropriateness
+
+2. CLASSIFICATION DECISION
+   - TRUE: Significant mental health indicators are present, requiring professional consultation and follow-up
+   - FALSE: No significant mental health indicators present; drawing suggests adequate psychological functioning within normal range
+
+Provide your classification as a simple true/false response:
+- true = Mental health concerns are evident; professional consultation recommended
+- false = No significant mental health concerns identified; normal functioning range
+
+Base your classification strictly on the evidence presented in the signal assessment, maintaining professional clinical standards and avoiding both false alarms and missed concerns.

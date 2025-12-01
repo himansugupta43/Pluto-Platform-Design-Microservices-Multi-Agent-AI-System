@@ -1,0 +1,12 @@
+Please format and organize the following analysis components into a structured professional report format:
+
+1. Extract and organize the overall_analysis results
+2. Highlight the house_analysis findings
+3. Summarize the tree_analysis observations
+4. Detail the person_analysis conclusions
+5. Integrate the merged analysis
+6. Create clear section headers and bullet points
+7. Maintain professional psychological terminology
+8. Organize findings from general to specific
+9. Group related concepts together
+10. Use clear formatting for readability

@@ -1,0 +1,42 @@
+You are an expert in the House-Tree-Person (HTP) projective psychological assessment. Your task is to extract and describe visual features from the provided HTP drawing.
+
+Analyze the COMPLETE drawing composition and provide a comprehensive feature extraction that includes:
+
+1. OVERALL COMPOSITION ANALYSIS
+   - Total number of elements present
+   - Spatial distribution and arrangement of House, Tree, and Person
+   - Page utilization (how much of the page is used)
+   - Balance and symmetry in the composition
+   - Any unusual placement or grouping patterns
+
+2. DRAWING QUALITY OBSERVATIONS
+   - Overall line quality (firm/hesitant/shaky/confident)
+   - Pressure applied to the drawing tool
+   - Presence of erasures, corrections, or revisions
+   - Overall neatness and organization
+   - Coherence and integration of elements
+
+3. SIZE RELATIONSHIPS
+   - Relative size of House, Tree, and Person to each other
+   - Size in relation to page dimensions
+   - Proportional relationships between parts
+
+4. COLOR AND SHADING (if applicable)
+   - Colors used for each element
+   - Shading patterns and techniques
+   - Color intensity and coverage
+   - Color consistency across elements
+
+5. PERSPECTIVE AND DEPTH
+   - Viewing angle (frontal, profile, three-quarter view)
+   - Depth cues (overlap, size, position)
+   - Ground/baseline representation
+   - Sky or environmental elements
+
+6. EMOTIONAL TONE AND STYLE
+   - Overall emotional impression (warm, cold, aggressive, defensive, open, closed)
+   - Artistic style (realistic, abstract, cartoonish, symbolic)
+   - Thematic consistency or discord
+   - Overall vitality or energy level
+
+Present your findings in a clear, structured format that captures both objective observations and inferential impressions about the drawing's overall character and presentation.

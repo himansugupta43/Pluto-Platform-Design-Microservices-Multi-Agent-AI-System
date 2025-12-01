@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+python-dotenv
+passlib[bcrypt]==1.7.4  # Specify the version for passlib
+bcrypt==3.2.0           # Add this line for bcrypt
+python-jose[cryptography]
+langchain_google_genai
+pydantic
+email-validator 
+python-multipart
+langchain
+langchain-community
+langchain_google_genai
+google-generativeai
+loguru   
